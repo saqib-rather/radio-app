@@ -17,8 +17,9 @@ A lightweight web application built with Flask for streaming uploaded music. Use
 
 1. **Clone the repository** or extract the provided ZIP file.
 2. **Navigate to the project directory**:
-   ```bash
-   cd path/to/project
+```bash
+cd radio-app
+python3 app.py
 ```
 
 ### Install Dependencies
