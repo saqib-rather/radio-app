@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Radio Station</h1>
+    <div class="player">
+        <audio controls>
+            <source src="{{ url_for('stream') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+    <h2>Available Songs</h2>
+    <ul class="song-list">
+        {% for song in songs %}
+            <li>{{ song.title }} - {{ song.artist }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
